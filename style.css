@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+}
+main{
+    width: 100%;
+    height: 100%; 
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(178, 245, 178);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#game-screen{
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+}
+#game-screen-top{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(58, 102, 58);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    padding:0 190px;
+}
+/* elem start  */
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+/* elem end  */
+/* -------------- */
+/* bottom of game start */
+
+#game-screen-bottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+#game-screen-bottom .bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(44, 95, 44);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+#game-screen-bottom .bubble:hover{
+    background-color: rgb(28, 61, 28);
+    cursor: pointer;
+}
+
+/* bottom of game end */
